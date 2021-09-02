@@ -1,160 +1,160 @@
-* {
-  box-sizing: border-box;
-}
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
 
-body {
-  margin: 0;
-  padding: 0;
-}
+/*body {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*}*/
 
-.app {
-  font-family: sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background: #478aef;
-  color: #cadbf5;
-}
+/*.app {*/
+/*  font-family: sans-serif;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  min-height: 100vh;*/
+/*  padding-top: 50px;*/
+/*  padding-left: 50px;*/
+/*  padding-right: 50px;*/
+/*  background: #478aef;*/
+/*  color: #cadbf5;*/
+/*}*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Varela Round', sans-serif;
-}
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4,*/
+/*h5,*/
+/*h6 {*/
+/*  font-family: 'Varela Round', sans-serif;*/
+/*}*/
 
-.info {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 50px;
-}
+/*.info {*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  justify-content: space-around;*/
+/*  align-items: center;*/
+/*  margin-bottom: 50px;*/
+/*}*/
 
-.info h2 {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-}
+/*.info h2 {*/
+/*  font-size: 18px;*/
+/*  margin-top: 0;*/
+/*  margin-bottom: 0;*/
+/*  text-align: center;*/
+/*}*/
 
-.wins-losses {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 16px;
-  text-align: center;
-  line-height: 1;
-}
+/*.wins-losses {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: flex-end;*/
+/*  font-family: 'Varela Round', sans-serif;*/
+/*  font-size: 16px;*/
+/*  text-align: center;*/
+/*  line-height: 1;*/
+/*}*/
 
-.wins,
-.losses {
-  display: flex;
-  align-items: center;
-}
+/*.wins,*/
+/*.losses {*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
 
-.wins .number,
-.losses .number {
-  font-size: 52px;
-  margin-right: 5px;
-}
+/*.wins .number,*/
+/*.losses .number {*/
+/*  font-size: 52px;*/
+/*  margin-right: 5px;*/
+/*}*/
 
-.wins {
-  margin-right: 30px;
-}
+/*.wins {*/
+/*  margin-right: 30px;*/
+/*}*/
 
-.wins .number {
-  color: #5dc674;
-}
+/*.wins .number {*/
+/*  color: #5dc674;*/
+/*}*/
 
-.losses .number {
-  color: #da516f;
-}
+/*.losses .number {*/
+/*  color: #da516f;*/
+/*}*/
 
-.choices {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  grid-gap: 20px;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 18px;
-  color: #5f99f0;
-}
+/*.choices {*/
+/*  display: grid;*/
+/*  grid-template-columns: 1fr 1fr 1fr;*/
+/*  text-align: center;*/
+/*  grid-gap: 20px;*/
+/*  font-family: 'Varela Round', sans-serif;*/
+/*  font-size: 18px;*/
+/*  color: #5f99f0;*/
+/*}*/
 
-.choices > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/*.choices > div {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*}*/
 
-.vs {
-  width: 100px;
-  font-size: 100px;
-  opacity: 0.25;
-  transform: rotate(-0.1turn);
-  pointer-events: none;
-}
+/*.vs {*/
+/*  width: 100px;*/
+/*  font-size: 100px;*/
+/*  opacity: 0.25;*/
+/*  transform: rotate(-0.1turn);*/
+/*  pointer-events: none;*/
+/*}*/
 
-.choices button {
-  cursor: pointer;
-  font-size: 50px;
-  margin-bottom: 20px;
-  padding: 20px;
-  background: #fff;
-  outline: none;
-  border: none;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  transition: 0.1s ease all;
-}
+/*.choices button {*/
+/*  cursor: pointer;*/
+/*  font-size: 50px;*/
+/*  margin-bottom: 20px;*/
+/*  padding: 20px;*/
+/*  background: #fff;*/
+/*  outline: none;*/
+/*  border: none;*/
+/*  border-radius: 50%;*/
+/*  height: 100px;*/
+/*  width: 100px;*/
+/*  transition: 0.1s ease all;*/
+/*}*/
 
-.choices button:hover {
-  transform: scale(1.07);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
+/*.choices button:hover {*/
+/*  transform: scale(1.07);*/
+/*  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),*/
+/*    0 4px 6px -2px rgba(0, 0, 0, 0.05);*/
+/*}*/
 
-.choices .rock {
-  background: #f7941a;
-}
+/*.choices .rock {*/
+/*  background: #f7941a;*/
+/*}*/
 
-.choices .rock path {
-  fill: #815116;
-}
+/*.choices .rock path {*/
+/*  fill: #815116;*/
+/*}*/
 
-.choices .paper {
-  background: #8dc351;
-}
+/*.choices .paper {*/
+/*  background: #8dc351;*/
+/*}*/
 
-.choices .paper path {
-  fill: #3f5e1b;
-}
+/*.choices .paper path {*/
+/*  fill: #3f5e1b;*/
+/*}*/
 
-.choices .scissors {
-  background: #7c79ea;
-}
+/*.choices .scissors {*/
+/*  background: #7c79ea;*/
+/*}*/
 
-.choices .scissors path {
-  fill: #2f2c8f;
-}
+/*.choices .scissors path {*/
+/*  fill: #2f2c8f;*/
+/*}*/
 
-.choices .computer-choice {
-  background: #333;
-  color: #bbb;
-}
+/*.choices .computer-choice {*/
+/*  background: #333;*/
+/*  color: #bbb;*/
+/*}*/
 
-.choices .computer-choice path {
-  fill: #bbb;
-}
+/*.choices .computer-choice path {*/
+/*  fill: #bbb;*/
+/*}*/
 
 .game-state {
   background: rgba(0, 0, 0, 0.5);
