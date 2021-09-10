@@ -1,11 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import './App.css';
+import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
-import Info from './components/info/info'
-import Choices from './components/choices/choices'
-import Rock from './icons/Rock'
-import Paper from './icons/Paper';
-import Scissors from './icons/Scissors';
+import Logic from "./components/logic/logic";
+import './App.css'
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -32,78 +28,7 @@ const AppStyle = styled.div`
 
 
 export default function App() {
-  const [userChoice, setUserChoice] = useState(null)
-  const [computerChoice, setComputerChoice] = useState('computer-choice')
-  const [userScore, setUserScore] = useState(null)
-  const [computerScore, setComputerScore] = useState(null)
 
-                        ///Styled Components///
-
-
-                                  ///Logic///
-  const computerComponent = () => {
-    switch (computerChoice) {
-      case 'scissors':
-        return <Scissors/>
-
-      case 'rock':
-        return <Rock/>
-
-      case 'paper':
-        return <Paper/>
-
-      default:
-        return '?'
-    }
-
-  }
-
-  const win = () => {
-    setUserScore(prevCount => prevCount + 1)
-  }
-  const lose = () => {
-    setComputerScore(prevCount => prevCount + 1)
-  }
-  const tie = () => {
-
-  }
-
-  const handleClick = (value) => {
-    setUserChoice(value);
-    getComputerChoice()
-
-  }
-
-  const getComputerChoice = () => {
-    const choiceList = ["rock", "paper", "scissors"];
-    const randomNumber = Math.floor(Math.random()*3);
-    setComputerChoice(choiceList[randomNumber]);
-    computerComponent(choiceList[randomNumber])
-    console.log(randomNumber)
-  };
-
-  useEffect(() =>{
-    switch (userChoice + computerChoice) {
-      case "paperrock":
-      case "rockscissors":
-      case "scissorspaper":
-        win();
-        break;
-
-      case "rockpaper":
-      case "scissorsrock":
-      case "paperscissors":
-        lose();
-        break;
-
-      case "rockrock":
-      case "paperpaper":
-      case "scissorsscissors":
-        tie();
-        break;
-      default:
-    }
-  },[userChoice, computerChoice] )
 
 
 
@@ -111,15 +36,12 @@ export default function App() {
       
     <AppStyle>
       <GlobalStyle />
+        {/*<div className="game-state"> win*/}
       {/* information goes here */}
-      <Info userScore = {userScore} computerScore = {computerScore}/>
-      
-      {/* the popup to show win/loss/draw */}
       {/*<div className="game-state"></div>*/}
-      <Choices userChoice = {userChoice} computerChoice = {computerChoice} computerComponent = {computerComponent} handleClick = {handleClick}/>
-
+      <Logic />
+        {/*</div>*/}
         {/* show the computer's choice */}
-
     </AppStyle>
   );
 }
