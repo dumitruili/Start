@@ -156,80 +156,80 @@
 /*  fill: #bbb;*/
 /*}*/
 
-.game-state {
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  line-height: 1.3;
-  font-family: 'Varela Round', sans-serif;
-}
+/*.game-state {*/
+/*  background: rgba(0, 0, 0, 0.5);*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  height: 50vh;*/
+/*  width: 50%;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: 24px;*/
+/*  line-height: 1.3;*/
+/*  font-family: 'Varela Round', sans-serif;*/
+/*}*/
 
-.game-state.win > div {
-  background: rgb(141, 195, 81);
-  color: rgb(226, 243, 206);
-}
-.game-state.win svg path {
-  fill: rgb(226, 243, 206);
-}
+/*.game-state.win > div {*/
+/*  background: rgb(141, 195, 81);*/
+/*  color: rgb(226, 243, 206);*/
+/*}*/
+/*.game-state.win svg path {*/
+/*  fill: rgb(226, 243, 206);*/
+/*}*/
 
-.game-state.draw > div {
-  background: rgb(0, 0, 0);
-  color: rgb(88, 88, 88);
-}
-.game-state.draw svg path {
-  fill: rgb(88, 88, 88);
-}
+/*.game-state.draw > div {*/
+/*  background: rgb(0, 0, 0);*/
+/*  color: rgb(88, 88, 88);*/
+/*}*/
+/*.game-state.draw svg path {*/
+/*  fill: rgb(88, 88, 88);*/
+/*}*/
 
-.game-state.lose > div {
-  background: rgb(218, 81, 111);
-  color: rgb(240, 169, 184);
-}
-.game-state.lose svg path {
-  fill: rgb(240, 169, 184);
-}
+/*.game-state.lose > div {*/
+/*  background: rgb(218, 81, 111);*/
+/*  color: rgb(240, 169, 184);*/
+/*}*/
+/*.game-state.lose svg path {*/
+/*  fill: rgb(240, 169, 184);*/
+/*}*/
 
-.game-state > div {
-  width: 60%;
-  text-align: center;
-  padding: 0 40px;
-  border-radius: 10px;
-  z-index: 1;
-  color: #fff;
-  font-size: 60px;
-}
+/*.game-state > div {*/
+/*  width: 60%;*/
+/*  text-align: center;*/
+/*  padding: 0 40px;*/
+/*  border-radius: 10px;*/
+/*  z-index: 1;*/
+/*  color: #fff;*/
+/*  font-size: 60px;*/
+/*}*/
 
-.game-state-content {
-  display: flex;
-  justify-content: center;
-}
+/*.game-state-content {*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*}*/
 
-.game-state-content p {
-  margin: 40px 15px 30px 0;
-  display: flex;
-  align-items: center;
-}
+/*.game-state-content p {*/
+/*  margin: 40px 15px 30px 0;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*}*/
 
-.game-state-content svg {
-  width: 100px;
-}
+/*.game-state-content svg {*/
+/*  width: 100px;*/
+/*}*/
 
-.game-state button {
-  margin-bottom: -5%;
-  width: 100%;
-  display: block;
-  border: none;
-  border-radius: 10px;
-  padding: 25px;
-  font-size: 30px;
-  cursor: pointer;
-  flex-shrink: 1;
-  background: #fa65ff;
-  color: #fdedfd;
-}
+/*.game-state button {*/
+/*  margin-bottom: -5%;*/
+/*  width: 100%;*/
+/*  display: block;*/
+/*  border: none;*/
+/*  border-radius: 10px;*/
+/*  padding: 25px;*/
+/*  font-size: 30px;*/
+/*  cursor: pointer;*/
+/*  flex-shrink: 1;*/
+/*  background: #fa65ff;*/
+/*  color: #fdedfd;*/
+/*}*/

@@ -25,12 +25,7 @@ const AppStyle = styled.div`
   color: #cadbf5;
 `
 
-
-
 export default function App() {
-
-
-
 
   return (
       

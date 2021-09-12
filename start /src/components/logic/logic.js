@@ -4,14 +4,17 @@ import Rock from "../../icons/Rock";
 import Paper from "../../icons/Paper";
 import Info from "../info/info";
 import Choices from "../choices/choices";
+import ModalComponent from "../modal/modal";
 
 const Logic = () => {
     const [userChoice, setUserChoice] = useState(null)
     const [computerChoice, setComputerChoice] = useState('computer-choice')
     const [userScore, setUserScore] = useState(null)
     const [computerScore, setComputerScore] = useState(null)
-    
-const computerComponent = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+    const [result, setResult] = useState('')
+
+    const computerComponent = () => {
     switch (computerChoice) {
         case 'scissors':
             return <Scissors/>
@@ -30,15 +33,20 @@ const computerComponent = () => {
 
 const win = () => {
     setUserScore(prevCount => prevCount + 1)
+    setResult('You won')
 }
 const lose = () => {
     setComputerScore(prevCount => prevCount + 1)
+    setResult('You lost')
+
 }
 const tie = () => {
+    setResult('Its a draw')
 
 }
 
 const handleClick = (value) => {
+    setModalIsOpen(true)
     setUserChoice(value);
     getComputerChoice()
 
@@ -77,6 +85,12 @@ useEffect(() =>{
 
     return (
         <div>
+            <ModalComponent
+                modalIsOpen={modalIsOpen}
+                setModalIsOpen={setModalIsOpen}
+                result={result}
+            />
+
             <Info userScore={userScore} 
                   computerScore={computerScore}/>
             {/* the popup to show win/loss/draw */}
